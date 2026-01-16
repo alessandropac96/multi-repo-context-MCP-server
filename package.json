@@ -1,0 +1,32 @@
+{
+  "name": "multi-repo-context-mcp-server",
+  "version": "0.1.0",
+  "description": "A reusable template for a hierarchical MCP server that provides cross-repository context and tooling",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "multi-repo-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "multi-repo",
+    "context-server"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

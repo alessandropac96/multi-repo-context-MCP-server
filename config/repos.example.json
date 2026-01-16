@@ -1,0 +1,31 @@
+{
+  "repos": [
+    {
+      "name": "my-contracts",
+      "path": "/path/to/contracts",
+      "type": "contracts",
+      "tools": "builtin"
+    },
+    {
+      "name": "my-backend",
+      "path": "/path/to/backend",
+      "type": "backend",
+      "tools": "builtin"
+    },
+    {
+      "name": "my-custom-repo",
+      "path": "/path/to/custom",
+      "type": "unknown",
+      "tools": "custom"
+    }
+  ],
+  "discovery": {
+    "enabled": true,
+    "parentPath": "/path/to/parent",
+    "autoDetectType": true
+  },
+  "tools": {
+    "lazyLoad": true,
+    "cacheResults": true
+  }
+}
